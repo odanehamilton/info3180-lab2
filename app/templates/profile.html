@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}
+Profile
+{% endblock %}
+
+{% block main %}
+
+
+<div id="profile">
+    <div id="profile-picture">
+    <img src="http://stickyram.com/odanephamilton.com/odane.jpg">
+    </div><!-- profile-picture -->
+    <div id="name">
+        <p>Odane P. Hamilton</p>
+    </div><!-- name -->
+    <div id="date">
+        <p>Today is: {{ current_time}} </p>
+    </div><!-- date -->
+    <div id="other-data">
+        <p>Username: odanehamilton</p>
+        <br/>
+        <p>ID: 620056072</p>
+        <br/>
+        <p>Sex: Male</p>
+        <br/>
+        <p>Age: 22</p>
+        <br/>
+        <p>Highest Score: 200</p>
+        <br/>
+        <p>TDollars: 345</p>
+    </div> <!-- other-data -->
+</div><!-- profile -->
+
+
+{% endblock %}
