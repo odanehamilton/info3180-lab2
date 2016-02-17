@@ -22,7 +22,7 @@ def home():
     
 
 def timeinfo():
-    the_current_time = time.strftime("%a" + ", " + "%d " + "%b " + "%y")
+    the_current_time = time.strftime("%a" + ", " + "%d " + "%b " + "%Y")
     return the_current_time
     
 @app.route('/profile')
