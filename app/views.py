@@ -21,14 +21,15 @@ def home():
     return render_template('home.html')
     
 
-    
+def timeinfo():
+    the_current_time = time.strftime("%a" + ", " + "%d " + "%b " + "%y")
+    return the_current_time
     
 @app.route('/profile')
 def profile():
     """Render's profile page"""
-    def timeinfo():
-        current_time = time.strftime("%X")
-    return render_template('profile.html')
+    current_time = timeinfo()
+    return render_template('profile.html', current_time = current_time)
 
 
 @app.route('/about/')
